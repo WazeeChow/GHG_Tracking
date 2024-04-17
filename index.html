@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracking Campus GHG Emissions</title>
-    <link rel="stylesheet" href="app.css"> 
+    <title>GHG Emissions Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
-        <h1>Tracking Campus GHG Emissions</h1>
+        <h1>GHG Emissions Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="CO2-chart">
-            <canvas id="CO2Chart"></canvas>
-        </section>
-        <section id="electricity-chart">
-            <canvas id="electricityChart"></canvas>
+        <!-- Add a section for the CO2 emissions graph -->
+        <section id="emissions-graph">
+            <h2>CO2 Emissions Over Time</h2>
+            <!-- Add canvas element for the CO2 emissions chart -->
+            <canvas id="co2-chart"></canvas>
+
+            <!-- Add year selector -->
+            <div>
+                <label for="year-selector">Select Year:</label>
+                <select id="year-selector">
+                    <option value="all">All Years</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="app.js"></script> 
+    <footer>
+        <p>&copy; 2024 GHG Emissions Dashboard</p>
+    </footer>
+
+    <!-- Include your JavaScript file -->
+    <script src="scripts.js"></script>
 </body>
 </html>
