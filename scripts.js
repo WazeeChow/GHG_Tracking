@@ -100,7 +100,7 @@ async function main() {
         },
         {
             label: 'Net Emissions',
-            data: [], // Placeholder for net emissions data
+            data: [], 
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgba(255, 99, 132, 1)',
             borderWidth: 1
@@ -126,9 +126,9 @@ async function main() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Gov School CO2 Emissions', // Add your desired title here
+                    text: 'Gov School CO2 Emissions',
                     font: {
-                        size: 20 // Adjust the font size as needed
+                        size: 20
                     }
                 }
             },
